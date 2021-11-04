@@ -10,6 +10,7 @@ public class ProductDetailPage extends BasePage{
     By pickSizeLocator = By.xpath("//*[@id=\"option-size\"]/a[3]");
     By cartContainerLocator = By.xpath("//*[@id=\"divCartSlider\"]/div/div[3]/a");
     /*By cartContainerLocator = By.xpath("/html/body/div[5]/div[2]/div[1]/div[4]/div/div[4]/a");*/
+    By priceLocator = By.className("basket-discount");
 
     public ProductDetailPage(WebDriver driver) {
         super(driver);
@@ -28,6 +29,9 @@ public class ProductDetailPage extends BasePage{
         waitSecond(3000);
 
         click(cartContainerLocator);
+    }
+    public int getPrice(){
+        return Integer.parseInt(findText(priceLocator));
     }
 
 

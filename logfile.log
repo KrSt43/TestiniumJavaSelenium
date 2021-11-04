@@ -1,0 +1,24 @@
+2021-11-04 11:57:10,062 INFO  [Log] selectLogin()PASSED 
+2021-11-04 11:57:13,067 INFO  [LoginPage] Mail filled  
+2021-11-04 11:57:16,271 INFO  [LoginPage] password filled 
+2021-11-04 11:57:16,440 INFO  [Log] fillLoginInfo()PASSED 
+2021-11-04 11:57:19,457 INFO  [LoginPage] clicked on login button 
+2021-11-04 11:57:24,839 ERROR [Log] selectLoginButton()Failed with cause : no such element: Unable to locate element: {"method":"xpath","selector":"/html/body/div[5]/div[2]/div[1]/div[4]/div/div[1]/div[1]/div/a/div"}
+  (Session info: chrome=95.0.4638.69)
+For documentation on this error, please visit: https://selenium.dev/exceptions/#no_such_element
+Build info: version: '4.0.0', revision: '3a21814679'
+System info: host: 'ABRA', ip: '192.168.1.33', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '1.8.0_302'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Command: [b94a5060359ab121c4d54b60d9634bb9, findElement {using=xpath, value=/html/body/div[5]/div[2]/div[1]/div[4]/div/div[1]/div[1]/div/a/div}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 95.0.4638.69, chrome: {chromedriverVersion: 95.0.4638.54 (d31a821ec901f..., userDataDir: C:\Users\MONSTER\AppData\Lo...}, goog:chromeOptions: {debuggerAddress: localhost:61954}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), se:cdp: ws://localhost:61954/devtoo..., se:cdpVersion: 95.0.4638.69, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
+Session ID: b94a5060359ab121c4d54b60d9634bb9 
+2021-11-04 11:57:32,813 INFO  [Log] search_product()PASSED 
+2021-11-04 11:57:44,901 INFO  [Log] select_product()PASSED 
+2021-11-04 11:58:00,432 INFO  [Log] add_product()PASSED 
+2021-11-04 11:58:00,435 ERROR [Log] go_to_cart()Failed with cause : Compound class names not permitted
+For documentation on this error, please visit: https://selenium.dev/exceptions/#invalid_selector_exception
+Build info: version: '4.0.0', revision: '3a21814679'
+System info: host: 'ABRA', ip: '192.168.1.33', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '1.8.0_302'
+Driver info: driver.version: unknown 
+2021-11-04 11:58:00,438 ERROR [Log] num_up()Failed with cause : null 
+2021-11-04 11:58:00,441 ERROR [Log] delete_product()Failed with cause : null 

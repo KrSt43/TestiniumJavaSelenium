@@ -11,6 +11,7 @@ public class CartPage extends BasePage{
     By emptySpace = By.xpath("//*[@id=\"ShoppingCartContent\"]/div[1]/div[1]/div[2]/div[1]/div[1]/div[1]");
     By deleteProductLocator = By.className("fa fa-trash-o");
     By deleteButtonLocator = By.xpath("//*[@id=\"Cart_ProductDelete_693913857\"]");
+    By cartPrice = By.className("rd-cart-item-price mb-15");
 
     public CartPage(WebDriver driver) {
         super(driver);
@@ -37,5 +38,8 @@ public class CartPage extends BasePage{
         click(deleteProductLocator);
         waitSecond(3000);
         click(deleteButtonLocator);
+    }
+    public int productPriceOnCart(){
+        return Integer.parseInt(findText(cartPrice));
     }
 }

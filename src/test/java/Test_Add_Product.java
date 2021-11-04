@@ -80,6 +80,7 @@ public class Test_Add_Product extends BaseTest{
         cartPage = new CartPage(driver);
         productDetailPage.goToCart();
         cartPage.waitSecond(3000);
+        Assertions.assertEquals(productDetailPage.getPrice(),cartPage.productPriceOnCart(),"True");
 
 
 
